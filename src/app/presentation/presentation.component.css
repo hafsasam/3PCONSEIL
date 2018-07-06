@@ -1,0 +1,36 @@
+.container {
+  background: url("../../assets/img/presentation.png") no-repeat ;
+  margin:-28px auto 0 auto;
+  background-size: contain;
+  height: 950px;
+  width: 800px;
+}
+
+.box1, .box2, .box3 {
+  width: 350px;
+  height: 200px;
+}
+
+h3 {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.box1 {
+  padding: 50px 0 0 0;
+}
+
+.box2 {
+  padding: 200px 0 0 0;
+  margin-left: 360px;
+}
+
+.box3 {
+  padding: 310px 0 0 0;
+}
+
