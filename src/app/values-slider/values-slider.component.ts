@@ -9,7 +9,6 @@ export class ValuesSliderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
 }
