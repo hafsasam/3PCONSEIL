@@ -1,33 +1,70 @@
 section {
-  margin: auto;
-  width: 100%;
+  margin: 0 auto;
 }
 .conatainer{
-  width: 60rem;
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: start;
+  padding: 0 10rem;
 }
 
 mat-card {
-  width: 30rem;
+  max-width: 30rem;
+
   flex: 1;
   margin: 1rem;
   text-align: center;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap;
 }
 
 mat-card-content {
   min-width: 15rem;
+  flex: 1;
+  padding: 0.25em 0.3em 0;
 }
 
 .inner {
   display: flex;
-  justify-content: start;
   align-items: center;
   flex-flow: wrap;
-  margin: 0 auto;
+  margin: 1rem auto;
   text-align: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+p {
+  font-size: 1em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+  text-align: justify;
+}
+
+mat-card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 37.50em) {
+  mat-card {
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  mat-card {
+    width: calc(33.33333% - 20px);
+  }
 }
