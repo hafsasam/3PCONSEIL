@@ -1,0 +1,33 @@
+section {
+  margin: auto;
+  width: 100%;
+}
+.conatainer{
+  width: 60rem;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+mat-card {
+  width: 30rem;
+  flex: 1;
+  margin: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-card-content {
+  min-width: 15rem;
+}
+
+.inner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0 auto;
+  text-align: center;
+}
