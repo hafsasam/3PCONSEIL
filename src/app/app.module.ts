@@ -1,5 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import { AlertModule } from 'ngx-bootstrap';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -11,11 +17,6 @@ import { ValuesSliderComponent } from './values-slider/values-slider.component';
 import { ServicesComponent } from './services/services.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
-import { AppRoutingModule } from './app-routing.module';
-import { AlertModule } from 'ngx-bootstrap';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ProductService } from './service/product.service';
 
@@ -38,7 +39,8 @@ import { ProductService } from './service/product.service';
     AlertModule.forRoot(),
     BrowserAnimationsModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    FlexLayoutModule
   ],
   providers: [ ProductService ],
   bootstrap: [AppComponent]
