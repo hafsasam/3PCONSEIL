@@ -1,5 +1,5 @@
 .container {
-  margin: 10rem auto 0;
+  margin: 1rem auto 0;
   padding: 1rem 2rem;
   width: 50rem;
   height: 25rem;
@@ -7,12 +7,22 @@
   flex-direction: column;
 }
 
-input {
+.buttons {
+  padding: 1rem;
+}
 
+mat-toolbar {
+  background-color: #017155;
+  width: 50rem;
 }
 
 form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 60rem;
+  height: 40rem;
+  margin: 1rem auto;
+
 }

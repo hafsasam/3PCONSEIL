@@ -1,19 +1,37 @@
-<form novalidate>
-  <div class="container">
-    <mat-form-field>
-      <input matInput type="text" name="nom" placeholder="Nom" required>
-    </mat-form-field>
 
-    <mat-form-field>
-      <input matInput type="email" name="email" placeholder="E-mail" required>
-    </mat-form-field>
+<form novalidate [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <mat-toolbar>
+    <h2>Nous contacter</h2>
+  </mat-toolbar>
+  <div class="inner bg-light" >
 
-    <mat-form-field>
-      <textarea matInput name="msg" placeholder="Message"></textarea>
-    </mat-form-field>
-  <div class="buttons">
-    <button mat-button type="submit">Envoyer</button>
-    <button mat-button type="reset">Réintialiser</button>
-  </div>
+    <div class="container">
+      <mat-form-field>
+        <input matInput type="text" name="nom" placeholder="Nom" formControlName="name" required>
+        <mat-error *ngIf="( nom.hasError('required') || nom.hasError('minLength') ) && ( nom.touched || nom.dirty )">
+          Veuillez entrer un nom
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput type="email" name="email" placeholder="E-mail" formControlName="email" required>
+        <mat-error *ngIf="( mail.hasError('required') || mail.hasError('email') ) && ( mail.touched || mail.dirty )">
+          Veuillez entrer un e-mail valide
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <textarea matInput name="msg" rows="10" placeholder="Message" formControlName="msg" required></textarea>
+        <mat-error *ngIf="mesg.hasError('required') && ( mesg.touched || mesg.dirty )">
+          Ce champ est obligatoire
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="buttons">
+      <button mat-button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+      <button mat-button type="reset">Réintialiser</button>
+    </div>
+
   </div>
 </form>
