@@ -133,34 +133,4 @@
   color: #fff;
 }
 
-.hidden {
-  display: none;
-}
 
-.icon {
-  display: block;
-  width: 1.5em;
-  height: 1.5em;
-  margin: 0 auto;
-  fill: currentColor;
-}
-
-.btn {
-  border: 0;
-  padding: 0;
-  margin: 0;
-  background: none;
-  color: inherit;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.btn--menu {
-  position: absolute;
-  top: 1vw;
-  right: 2vw;
-  color: #939391;
-  pointer-events: visible;
-}

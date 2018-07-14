@@ -1,43 +1,34 @@
-<nav class="" id="mynav">
-  <a class="navbar-brand" href="#">
-    <img src="../../assets/img/logo-nav.png" class="d-inline-block align-top" alt="3P CONSEIL logo">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/home">Accueil <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/home">Présentation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/services">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/products">Produits</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/references">Références</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/contact">Contact</a>
-      </li>
-      <!--
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Langue
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Français</a>
-          <a class="dropdown-item" href="#">Anglais</a>
-          <a class="dropdown-item" href="#">Arabe</a>
-          <a class="dropdown-item" href="#">Amazigh</a>
-        </div>
-      </li>
-      -->
-    </ul>
+ <div class="menu">
+    <button class="btn btn--menu" (click)="onToggle()">
+      <svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg>
+    </button>
+
+    <svg class="hidden">
+      <symbol id="icon-menu" viewBox="0 0 17.6 9.9">
+        <title>menu</title>
+        <path d="M17.6,1H0V0h17.6V1z M17.6,4.3h-12v1h12V4.3z M17.6,8.9h-6.9v1h6.9V8.9z"/>
+      </symbol>
+      <symbol id="icon-cross" viewBox="0 0 10.2 10.2">
+        <title>cross</title>
+        <path d="M5.8,5.1l4.4,4.4l-0.7,0.7L5.1,5.8l-4.4,4.4L0,9.5l4.4-4.4L0,0.7L0.7,0l4.4,4.4L9.5,0l0.7,0.7L5.8,5.1z"/>
+      </symbol>
+    </svg>
   </div>
-</nav>
+
+  <div class="" *ngIf="show">
+    <nav class="menu menu--open">
+      <ul class="menu__inner" >
+        <li class="menu__item"><a class="navbar-brand" href="#">
+          <img src="../../../assets/img/logo-nav.png" class="d-inline-block align-top" alt="3P CONSEIL logo">
+        </a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Work</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Play</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Chat</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Party</a></li>
+        <li class="menu__item"><a class="btn btn--close" (click)="onToggle()"><svg class="icon icon--menu">
+          <use xlink:href="#icon-cross"></use>
+        </svg></a></li>
+      </ul>
+    </nav>
+
+  </div>
