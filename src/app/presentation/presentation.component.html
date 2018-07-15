@@ -1,16 +1,35 @@
-<a name="presentationBox">
-  <div class="container">
-    <div class="box1">
-        <h3>{{box1.title}}</h3>
-      <p>{{box1.description}}</p>
-    </div>
-    <div class="box2">
-      <h3>{{box2.title}}</h3>
-      <p>{{box2.description}}</p>
-    </div>
-    <div class="box3">
-      <h3>{{box3.title}}</h3>
-      <p>{{box3.description}}</p>
-    </div>
-  </div>
+
+  <div class="container demo-3 loading">
+    <a name="presentationBox">
+    <main>
+      <div class="morph-wrap hidden">
+        <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+          <polygon points="700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6"/>
+        </svg>
+      </div>
+
+      <div class="content-wrap">
+        <div class="content content--layout content--layout-1">
+          <img class="content__img" src="../../assets/img/2.jpg" alt="Some image" />
+          <h3 class="content__title">{{ box1.title }}</h3>
+          <p class="content__desc">{{ box1.description }}</p>
+        </div>
+      </div>
+      <div class="content-wrap">
+        <div class="content content--layout content--layout-2">
+          <img class="content__img" src="../../assets/img/5.jpg" alt="Some image" />
+          <h3 class="content__title">{{ box2.title }}</h3>
+          <p class="content__desc">{{ box2.description }}</p>
+        </div>
+      </div>
+      <div class="content-wrap">
+        <div class="content content--layout content--layout-3">
+          <img class="content__img" src="../../assets/img/3.jpg" alt="Some image" />
+          <h3 class="content__title">{{ box3.title }}</h3>
+          <p class="content__desc">{{ box3.description }}</p>
+        </div>
+      </div>
+    </main>
+
 </a>
+</div>
