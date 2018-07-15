@@ -1,24 +1,32 @@
 section {
   margin: 0 auto;
-  width: 62vw;
-  display: flex;
+
 }
 
 img {
-  margin: 15px;
+  margin: 1em;
   max-height: 40px;
+  display: inline-block;
+  align-self: center;
+
 }
 
 .conatainer {
-  display: flex;
-  justify-content: end;
-  align-items: center;
   margin: 0 auto;
-  text-align: center;
+  display: grid;
+  grid-auto-columns: minmax(30px, auto);
+  grid-auto-rows: 40px;
+  grid-auto-flow: dense;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
 }
 
-#jeun {
-  margin-left: 5rem;
+.large {
+  grid-area: span 2;
 }
 
+.filler {
+  margin-left: 30em;
 
+}
