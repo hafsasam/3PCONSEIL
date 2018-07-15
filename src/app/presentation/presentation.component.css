@@ -259,46 +259,7 @@ a:focus {
   z-index: -1;
 }
 
-/* Deco elements */
-.deco {
-  pointer-events: none;
-}
-
-.deco--title {
-  grid-area: decotitle;
-  -webkit-writing-mode: vertical-lr;
-  writing-mode: vertical-lr;
-  text-align: right;
-  align-self: end;
-  justify-self: end;
-}
-
-/* Top Navigation Style */
-.codrops-links {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 1em 0 0;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.codrops-icon {
-  position: relative;
-  display: inline-block;
-  padding: 0.75em 0.75em 1em;
-}
-
 /* Demo themes */
-.demo-2 {
-  --background-color: #1d1b22;
-  --background-color-2: #342560;
-  --background-color-3: #553e9a;
-  --text-color: #fff;
-  --link-color: #f9ed8a;
-  --link-hover-color: #fff;
-}
 
 .demo-3 {
   --background-color: #56cccf;
@@ -323,13 +284,6 @@ a:focus {
     z-index: 1000;
     position: absolute;
   }
-  .codrops-header {
-    align-items: center;
-    flex-direction: column;
-  }
-  .deco--title {
-    display: none;
-  }
   .demos {
     text-align: center;
   }
@@ -351,9 +305,8 @@ a:focus {
   .content--layout {
     transform: scale3d(0.6,0.6,1);
   }
-  .content__author,
-  .content__desc,
-  .content__link {
+
+  .content__desc{
     font-size: 1.35em;
   }
 }
