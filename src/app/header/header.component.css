@@ -89,19 +89,25 @@
   right: 50%;
 }
 
-.slide__title, .slide__subtitle {
+.slide__title {
   font-size: 5vw;
   margin: 0 0 0.2rem;
-  padding: 0 0.5rem;
   font-weight: normal;
   line-height: 1;
   white-space: nowrap;
   position: relative;
   overflow: hidden;
-}
-
-.slide__title {
   padding: 0.35rem 0.25rem 0.15rem;
+}
+.slide__subtitle {
+  font-size: 3vw;
+  margin: 0 0 0.2rem;
+  padding: 0.5rem;
+  font-weight: normal;
+  line-height: 1;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
 }
 
 .slide__title .slide__box,
