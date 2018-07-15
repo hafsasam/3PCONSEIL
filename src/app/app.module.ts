@@ -29,6 +29,7 @@ import { ProductsDetailComponent } from './products-detail/products-detail.compo
 import { ReferencesComponent } from './references/references.component';
 
 import { ProductService } from './service/product.service';
+import { Services3pService } from './service/services3p.service';
 
 
 @NgModule({
@@ -63,7 +64,10 @@ import { ProductService } from './service/product.service';
     ReactiveFormsModule,
     MatToolbarModule
   ],
-  providers: [ ProductService ],
+  providers: [
+    ProductService,
+    Services3pService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
