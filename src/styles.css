@@ -5,3 +5,15 @@ body {
   height: 100%;
   min-height: 100%;
 }
+
+@font-face {
+  font-family: 'nexa_boldregular';
+  font-weight: bold;
+  font-style: normal;
+  src: url('./assets/fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.eot');
+  src: url('./assets/fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('./assets/fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.woff2') format('woff2'),
+  url('./assets/fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.woff') format('woff'),
+  url('./assets/fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.ttf') format('truetype'),
+  url('./assets/fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
+}
