@@ -1,5 +1,5 @@
 section {
-  margin: 0 auto;
+  margin: 2.5em auto;
 
 }
 
@@ -8,7 +8,7 @@ img {
   max-height: 40px;
   display: inline-block;
   align-self: center;
-
+  filter: grayscale(1);
 }
 
 .conatainer {
@@ -28,5 +28,4 @@ img {
 
 .filler {
   margin-left: 30em;
-
 }
