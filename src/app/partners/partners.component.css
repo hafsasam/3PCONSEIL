@@ -11,6 +11,10 @@ img {
   filter: grayscale(1);
 }
 
+img:hover {
+  filter: grayscale(0);
+}
+
 .conatainer {
   margin: 0 auto;
   display: grid;
