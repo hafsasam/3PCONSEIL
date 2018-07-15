@@ -131,6 +131,7 @@
 
 .slide__explore:hover {
   color: #fff;
+  text-transform: none;
 }
 
 
