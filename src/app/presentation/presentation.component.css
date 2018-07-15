@@ -17,8 +17,9 @@
   box-sizing: border-box;
 }
 
-.container {
+section {
   background-color: #ebeef4;
+  width: 100%;
 }
 
 /* Page Loader */
@@ -59,17 +60,6 @@ main {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: var(--link-color);
-  outline: none;
-}
-
-a:hover,
-a:focus {
-  color: var(--link-hover-color);
-  outline: none;
-}
 
 .hidden {
   position: absolute;
