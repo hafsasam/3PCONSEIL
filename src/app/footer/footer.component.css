@@ -8,6 +8,8 @@ footer {
   z-index: 10;
   height: 4em;
   margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
 }
 
 #copyr {
@@ -26,11 +28,15 @@ footer {
 }
 
 #links {
-  float: right;
   width: 12em;
-  padding: 1.25em 2em ;
+  padding: 1.25em 2em;
 }
 
 i {
   margin-left: 6px;
+}
+
+.logo {
+  max-height: 2em;
+  margin-top: 1em;
 }
