@@ -1,0 +1,15 @@
+<div>
+  <h2 mat-dialog-title>{{ data.title }}</h2>
+  <hr>
+  <mat-dialog-content>
+    <p>{{ data.desc }}</p>
+   <strong>Objectifs :</strong>
+    <ul>
+      <li *ngFor="let obj of data.obj">{{ obj }}</li>
+  </ul>
+  </mat-dialog-content>
+  <hr>
+  <mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close>Retourner</button>
+  </mat-dialog-actions>
+</div>
