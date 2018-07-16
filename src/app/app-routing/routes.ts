@@ -1,11 +1,9 @@
 import { Routes } from '@angular/router';
 
-import { ServicesComponent } from '../services/services.component';
 import { ProductsComponent } from '../products/products.component';
 import { ContactComponent } from '../contact/contact.component';
 import { HomeComponent } from '../home/home.component';
 import { ServicesDetailComponent } from '../services-detail/services-detail.component';
-import { ProductsDetailComponent } from '../products-detail/products-detail.component';
 import { ReferencesComponent } from '../references/references.component';
 
 export const routes: Routes = [

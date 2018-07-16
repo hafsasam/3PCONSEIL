@@ -11,6 +11,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDialogModule } from '@angular/material';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -25,12 +27,11 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesDetailComponent } from './services-detail/services-detail.component';
-import { ProductsDetailComponent } from './products-detail/products-detail.component';
 import { ReferencesComponent } from './references/references.component';
+import { ProductDialogComponent } from './product-dialog/product-dialog.component';
 
 import { ProductService } from './service/product.service';
 import { Services3pService } from './service/services3p.service';
-
 
 @NgModule({
   declarations: [
@@ -47,8 +48,8 @@ import { Services3pService } from './service/services3p.service';
     ContactComponent,
     HomeComponent,
     ServicesDetailComponent,
-    ProductsDetailComponent,
-    ReferencesComponent
+    ReferencesComponent,
+    ProductDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -62,12 +63,16 @@ import { Services3pService } from './service/services3p.service';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatDialogModule,
+    MatTabsModule
   ],
+  entryComponents: [ ProductDialogComponent ],
   providers: [
     ProductService,
     Services3pService
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
