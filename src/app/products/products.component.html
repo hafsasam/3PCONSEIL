@@ -1,44 +1,17 @@
-<section>
-
-  <!--
-  <div class="conatainer">
-    <h2>Nos Produits</h2>
-    <div class="inner">
-
-        <mat-card *ngFor="let product of products">
-          <mat-card-header>
-            <mat-card-title>
-              <h3>{{product.name | uppercase}}</h3>
-            </mat-card-title>
-          </mat-card-header>
-          <mat-card-content>
-            <p>{{product.description}}</p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button></button>
-          </mat-card-actions>
-        </mat-card>
-      </div>
+<section class="bg-light">
+  <div class="slide__title-wrap">
+    <h3 class="slide__title"><div class="slide__box"></div><span class="slide__title-inner">Produits AT</span></h3>
   </div>
-
 
   <div class="container">
 
     <section id="grid" class="grid clearfix">
-      <div class="inner" *ngFor="let product of products">
-      <a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-        <figure>
-          <img src="" />
-          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-          <figcaption>
-            <h2></h2>
-            <p></p>
-            <button>En savoir +</button>
-          </figcaption>
-        </figure>
-      </a>
+      <div class="inner" *ngFor="let produit of products">
+        <button class="btn-back" (click)="showDetails(produit)"></button>
       </div>
     </section>
-  </div> /container -->
+
+  </div>
+
 </section>
 
