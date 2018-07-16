@@ -26,7 +26,7 @@ export const SERVICES: Service[] = [{
     {
     type: 'Assistance Technique',
       img: '../../assets/img/support.png',
-    phrase: 'Quelles que soient vos besoins, notre équipe est toujours là pour vous épauler',
+    phrase: 'Quels que soient vos besoins, notre équipe est toujours là pour vous épauler',
     desc: 'Parce que le chemin vers le sommet est un parcours semé d’embûches, le cabinet 3P CONSEIL a spécialement conçu' +
     ' pour vous son service d’assistance technique afin de vous accompagner de près vers l’atteinte de vos objectifs avec succès.\n' +
     'Grâce à notre expérience en matière de réalisation de diagnostics et d’analyses, d’évaluation d’impacts et de gestion ' +
