@@ -5,12 +5,10 @@ import { AlertModule } from 'ngx-bootstrap';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialogModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material/tabs';
 
@@ -58,12 +56,10 @@ import { Services3pService } from './service/services3p.service';
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    FlexLayoutModule,
     FormsModule,
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatToolbarModule,
     MatDialogModule,
     MatTabsModule
   ],
