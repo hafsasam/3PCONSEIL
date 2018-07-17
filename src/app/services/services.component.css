@@ -24,7 +24,6 @@ mat-card {
 mat-card-content {
   min-width: 10rem;
   flex: 1;
-  font-family: 'nexa_boldregular', sans-serif;
   text-align: center;
   align-self: center;
   display: flex;
@@ -55,10 +54,10 @@ mat-card-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'nexa_boldregular', sans-serif;
   height: 2rem;
   font-size: 2em;
   line-height: 0.65em;
+  color: #017155;
 }
 
 h2 {
@@ -70,7 +69,7 @@ h2 {
   padding: 0.5em 0;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   text-transform: lowercase;
-  color: #000000;
+  color: #42213D;
   text-align: center;
 }
 

@@ -75,11 +75,15 @@ section {
   height: 100%;
   top: 0;
   left: 0;
-  background: black;
+  background: #017155;
 }
 .slide__title-inner {
   position: relative;
   display: inline-block;
   color: white;
   font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+mat-card-title {
+  color: #42213D;
 }

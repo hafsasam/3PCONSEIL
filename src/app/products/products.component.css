@@ -18,32 +18,6 @@ section {
   align-items: center;
 }
 
-.inner {
-  width: 6rem;
-  height: 6rem;
-  background-color: #57585c;
-  border: 1rem solid #c6c9cf;
-}
-
-@keyframes boxpop {
-  from {
-    background-color: #57585c;
-    border: 1rem solid #c6c9cf
-  }
-  to {
-    background-color: #c6c9cf;
-    border: 1rem solid #57585c;
-  }
-}
-
-.inner:hover {
-  animation-name: boxpop;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  background-color: #c6c9cf;
-  border: 1rem solid #57585c;
-}
-
  h2 {
    font-size: 5vw;
    margin: 0 0 0.2rem;
@@ -82,7 +56,7 @@ section {
   height: 100%;
   top: 0;
   left: 0;
-  background: black;
+  background: #017155;
 }
 .slide__title-inner {
   position: relative;

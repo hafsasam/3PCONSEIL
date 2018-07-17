@@ -10,43 +10,11 @@
   url('../../assets/fonts/nexa_boldfree_macroman/Nexa_Free_Bold-webfont.svg#nexa_boldregular') format('svg');
 }
 
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 section {
-  background-color: #ebeef4;
+  background-color: #E6E6E6;
   width: 100%;
 }
 
-/* Page Loader */
-.js .loading::before {
-  content: '';
-  position: fixed;
-  z-index: 10000;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--background-color);
-}
-
-.js .loading::after {
-  content: '';
-  position: fixed;
-  z-index: 10000;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 10px solid var(--background-color-2);
-  border-left-color: var(--text-color);
-  animation: loaderAnim 0.8s linear infinite forwards;
-}
 
 @keyframes loaderAnim {
   to {
@@ -88,26 +56,6 @@ main {
   fill: var(--background-color-3);
 }
 
-/* SVG Morph */
-.morph-wrap {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-}
-
-.morph {
-  position: relative;
-  height: 100%;
-  fill: var(--background-color-2);
-  flex: none;
-}
 
 .content-wrap {
   position: relative;
@@ -158,7 +106,7 @@ main {
   text-transform: lowercase;
   z-index: 10;
   cursor: default;
-
+  color: #42213D;
 }
 
 .content__desc {
