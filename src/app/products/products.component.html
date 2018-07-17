@@ -6,8 +6,8 @@
   <div class="container">
 
     <section id="grid" class="grid clearfix">
-      <div class="inner" *ngFor="let produit of products">
-        <button class="btn-back" (click)="showDetails(produit)"></button>
+      <div class="" *ngFor="let produit of products">
+        <button mat-raised-button (click)="showDetails(produit)">{{ produit.name }}</button>
       </div>
     </section>
 
