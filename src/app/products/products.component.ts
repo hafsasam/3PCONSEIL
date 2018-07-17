@@ -6,10 +6,19 @@ import { Product } from './product';
 import { ProductService } from '../service/product.service';
 import { ProductDialogComponent } from '../product-dialog/product-dialog.component';
 
+import { flyInOut } from '../animations';
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.css'],
+  host: {
+    '[@flyInOut]': 'true',
+    'style': 'display: block;'
+  },
+  animations: [
+    flyInOut()
+  ]
 })
 
 export class ProductsComponent implements OnInit {
