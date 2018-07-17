@@ -1,0 +1,32 @@
+h1, h2 {
+  font-family: 'Coustard', serif;
+  text-align: center;
+  font-size: 2em;
+}
+
+p {
+  text-align: center;
+  padding-top: 0.75em;
+  padding-bottom: 1em;
+  width: auto;
+  margin: 0 auto;
+  font-size: 1em;
+
+}
+h1 {
+  padding-top: 0.5em;
+  font-size: 3em;
+  font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+h2 {
+  margin-top: -15px;
+}
+
+section {
+  background-color: #000000;
+  width: 100%;
+  min-height: 50vh;
+  color: white;
+  padding: 1em ;
+}
