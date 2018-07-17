@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { Feedback } from './feedback';
+import { } from '@types/googlemaps';
 
 @Component({
   selector: 'app-contact',
@@ -13,11 +14,21 @@ export class ContactComponent implements OnInit {
   contact: Feedback;
   contactForm: FormGroup;
 
+  @ViewChild('gmap') gmapElement: any;
+  map: google.maps.Map;
+
   constructor( private fb: FormBuilder ) {
     this.createForm();
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    const mapProp = {
+      center: new google.maps.LatLng(18.5793, 73.8143),
+      zoom: 10,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
+  }
 
   createForm() {
     this.contactForm = this.fb.group({

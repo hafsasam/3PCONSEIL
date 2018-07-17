@@ -1,11 +1,15 @@
+<section>
+  <div class="slide__title-wrap">
+    <h3 class="slide__title">
+      <div class="slide__box"></div>
+      <span class="slide__title-inner">Nous contacter</span>
+    </h3>
+  </div>
 
 <form novalidate [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-  <mat-toolbar>
-    <h2>Nous contacter</h2>
-  </mat-toolbar>
-  <div class="inner bg-light" >
 
-    <div class="container">
+  <div class="bg-light container">
+
       <mat-form-field>
         <input matInput type="text" name="nom" placeholder="Nom" formControlName="name" required>
         <mat-error *ngIf="( nom.hasError('required') || nom.hasError('minLength') ) && ( nom.touched || nom.dirty )">
@@ -26,7 +30,6 @@
           Ce champ est obligatoire
         </mat-error>
       </mat-form-field>
-    </div>
 
     <div class="buttons">
       <button mat-button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
@@ -35,3 +38,19 @@
 
   </div>
 </form>
+
+<div class="contactDetails">
+  <mat-card>
+    <mat-card-title>Tél/Fax :</mat-card-title>
+    <mat-card-subtitle>+212 5 37 56 62 22</mat-card-subtitle>
+    <mat-card-title>Adresse :</mat-card-title>
+    <mat-card-subtitle>Appt 26, centre commercial Cheikh Saif Av. Assanaoubar<br>
+      Hay Riad 10100 - Rabat</mat-card-subtitle>
+  </mat-card>
+</div>
+
+<div id="gmap">
+
+</div>
+
+</section>
