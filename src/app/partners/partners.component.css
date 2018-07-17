@@ -1,0 +1,34 @@
+section {
+  margin: 2.5em auto;
+}
+
+img {
+  margin: 0.75em;
+  max-height: 40px;
+  display: inline-block;
+  align-self: center;
+  filter: grayscale(1);
+}
+
+img:hover {
+  filter: grayscale(0);
+}
+
+.conatainer {
+  margin: 0 auto;
+  display: grid;
+  grid-auto-columns: minmax(30px, auto);
+  grid-auto-rows: 40px;
+  grid-auto-flow: dense;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+
+.large {
+  grid-area: span 2;
+}
+
+.filler {
+  margin-left: 30em;
+}

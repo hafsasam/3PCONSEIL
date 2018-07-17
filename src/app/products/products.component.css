@@ -1,0 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+section {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container {
+  padding: 12rem 0 0;
+}
+
+.grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,12rem);
+  grid-auto-rows: minmax(6rem,auto);
+  grid-gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  width: 6rem;
+  height: 6rem;
+  background-color: #57585c;
+  border: 1rem solid #c6c9cf;
+}
+
+@keyframes boxpop {
+  from {
+    background-color: #57585c;
+    border: 1rem solid #c6c9cf
+  }
+  to {
+    background-color: #c6c9cf;
+    border: 1rem solid #57585c;
+  }
+}
+
+.inner:hover {
+  animation-name: boxpop;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  background-color: #c6c9cf;
+  border: 1rem solid #57585c;
+}
+
+ h2 {
+   font-size: 5vw;
+   margin: 0 0 0.2rem;
+   font-weight: normal;
+   line-height: 1;
+   white-space: nowrap;
+   position: relative;
+   overflow: hidden;
+   padding: 0.35rem 0.25rem 0.15rem;
+}
+
+.slide__title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 400px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding-bottom: 5em;
+}
+
+.slide__title {
+  font-size: 5vw;
+  margin: 0 0 0.2rem;
+  font-weight: normal;
+  line-height: 1;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  padding: 0.35rem 0.25rem 0.15rem;
+}
+.slide__title .slide__box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+}
+.slide__title-inner {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.grid p {
+  padding: 0 20px;
+  color: #aaa;
+  font-weight: 300;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+
+.btn-back {
+  font-size: 2em;
+  line-height: 2;
+  z-index: 100;
+  width: 2em;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  pointer-events: auto;
+  border: 2px solid #c6c9cf;
+  background: none;
+}
+
+.btn-back:focus {
+  outline: none;
+}
+
+.content__title {
+  font-size: 7vw;
+  line-height: 0.85;
+  margin: 0;
+}
