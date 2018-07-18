@@ -14,13 +14,12 @@ export class ContactComponent implements OnInit {
 
   contact: Feedback;
   contactForm: FormGroup;
-  submissions = null;
+  submissions: Restangular;
 
   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
 
-  constructor( private fb: FormBuilder,
-               private restangular: Restangular ) {
+  constructor( private fb: FormBuilder ) {
     this.createForm();
   }
 
@@ -43,8 +42,9 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     this.contact = this.contactForm.value;
-    this.submissions.push(this.contact);
+    // this.submissions = this.contact;
     this.submissions.save();
+    window.alert('Success');
     this.contactForm.reset();
   }
 
