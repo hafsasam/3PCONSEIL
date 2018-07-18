@@ -25,8 +25,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     const mapProp = {
-      center: new google.maps.LatLng(18.5793, 73.8143),
-      zoom: 10,
+      center: new google.maps.LatLng(33.957901, -6.879529),
+      zoom: 21,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);

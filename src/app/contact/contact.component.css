@@ -25,7 +25,6 @@ form {
 #gmap {
   width: 20rem;
   height: 20rem;
-  background-color: grey;
   grid-area: map;
 }
 
