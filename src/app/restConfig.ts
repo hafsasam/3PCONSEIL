@@ -1,6 +1,6 @@
-import { baseURL } from './baseurl';
+import { baseURL } from './baseURL';
 
-// Function for settting the default restangular configuration
+// Function for setting the default restangular configuration
 export function RestangularConfigFactory (RestangularProvider) {
   RestangularProvider.setBaseUrl(baseURL);
 }
