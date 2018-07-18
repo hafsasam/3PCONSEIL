@@ -14,7 +14,7 @@ export class ContactComponent implements OnInit {
 
   contact: Feedback;
   contactForm: FormGroup;
-  submissions: Restangular;
+  submissions = null;
 
   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
@@ -45,7 +45,6 @@ export class ContactComponent implements OnInit {
     // this.submissions = this.contact;
     this.submissions.save();
     window.alert('Success');
-    this.contactForm.reset();
   }
 
   get nom() {
