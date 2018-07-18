@@ -11,6 +11,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material/tabs';
+import { RestangularModule, Restangular } from 'ngx-restangular';
+import { RestangularConfigFactory } from './restConfig';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -61,7 +63,8 @@ import { Services3pService } from './service/services3p.service';
     MatInputModule,
     ReactiveFormsModule,
     MatDialogModule,
-    MatTabsModule
+    MatTabsModule,
+    RestangularModule.forRoot(RestangularConfigFactory)
   ],
   entryComponents: [ ProductDialogComponent ],
   providers: [

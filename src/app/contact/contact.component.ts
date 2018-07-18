@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { Feedback } from './feedback';
 import { } from '@types/googlemaps';
+import { Restangular } from 'ngx-restangular';
 
 @Component({
   selector: 'app-contact',
@@ -13,11 +14,13 @@ export class ContactComponent implements OnInit {
 
   contact: Feedback;
   contactForm: FormGroup;
+  submissions = null;
 
   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
 
-  constructor( private fb: FormBuilder ) {
+  constructor( private fb: FormBuilder,
+               private restangular: Restangular ) {
     this.createForm();
   }
 
@@ -40,6 +43,9 @@ export class ContactComponent implements OnInit {
 
   onSubmit() {
     this.contact = this.contactForm.value;
+    this.submissions.push(this.contact);
+    this.submissions.save();
+    this.contactForm.reset();
   }
 
   get nom() {
