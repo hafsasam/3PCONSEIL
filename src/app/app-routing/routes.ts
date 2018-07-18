@@ -12,10 +12,5 @@ export const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'references', component: ReferencesComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '/home', redirectTo: '/home', pathMatch: 'full' },
-  { path: '/services', redirectTo: '/services', pathMatch: 'full' },
-  { path: '/products', redirectTo: '/products', pathMatch: 'full' },
-  { path: '/contact', redirectTo: '/contact', pathMatch: 'full' },
-  { path: '/references', redirectTo: '/references', pathMatch: 'full' }
+  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
