@@ -3,7 +3,7 @@ import { Product } from './product';
 export const PRODUCTS: Product[] = [
   {
     name: 'SYSDEP',
-    index: 1,
+    colour: '#9c9b9c',
     image: '',
     description: '3P CONSEIL offre une solution logicielle performante conçue exclusivement à la' +
     ' gestion budgétaire et dépenses. Elle a pour but d’organiser tout le circuit de l’exécution de' +
@@ -16,7 +16,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     name: 'GESTION DES ACHATS',
-    index: 2,
+    colour: '#42213D',
     image: '',
     description: '3P CONSEIL offre une solution performante qui permet l’optimisation de la gestion des achats dans les ' +
     'meilleures conditions de fiabilité, célérité et efficacité.',
@@ -32,7 +32,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     name: 'DASYS',
-    index: 3,
+    colour: '#017155',
     image: '',
     description: '3P CONSEIL offre un système d’information qui assure une maitrise optimale de l’information et une ' +
     'meilleure gestion et suivis des différentes activités de la DAS (Division de l’Action Sociale) pour la Province.',
@@ -51,7 +51,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     name: 'GESTION DU PARC AUTO',
-    index: 4,
+    colour: '#E6E6E6',
     image: '',
     description: '3P CONSEIL propose un système conçu pour assurer efficacement l’ensemble des tâches de gestion de ' +
     'parc automobile, qui vous permet d’enregistrer, de gérer et de consulter efficacement et rapidement toute information' +
@@ -67,7 +67,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     name: 'BUREAU D’ORDRE',
-    index: 5,
+    colour: '#4F518C',
     image: '',
     description: '3P CONSEIL propose un système conçu pour gérer l’ensemble des tâches d’un bureau d’ordre. Il vous permet ' +
     'd’enregistrer, de gérer et de consulter efficacement et rapidement toute information relative à votre bureau d’ordre.',
@@ -78,7 +78,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     name: 'GESTION DES RECETTES',
-    index: 6,
+    colour: 'white',
     image: '',
     description: '3P CONSEIL offre une solution performante qui permet l’optimisation de la gestion des recettes dans les ' +
     'meilleures conditions de fiabilité, célérité et efficacité.',
@@ -92,7 +92,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     name: 'CARTE INTERACTIVE',
-    index: 7,
+    colour: '#64B6AC',
     image: '',
     description: '3P CONSEIL offre une carte interactive dans le cadre d’une gestion optimale et performante des projets INDH.',
     objectifs: ['Suivre l’avancement de chaque projet de manière détaillée et contextuelle.',
@@ -106,7 +106,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     name: 'ETUDES GENERALES',
-    index: 8,
+    colour: '#4d5163',
     image: '',
     description: 'Pour tout besoin spécifique, 3P Conseil a un réseau développé de consultants experts ' +
     'dans divers domaines, dans le but d’apporter une réponse pertinente aux besoins de ses clients, ' +

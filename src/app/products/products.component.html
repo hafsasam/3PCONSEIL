@@ -7,7 +7,7 @@
 
     <section id="grid" class="grid clearfix">
       <div class="" *ngFor="let produit of products">
-        <button mat-raised-button (click)="showDetails(produit)">{{ produit.name }}</button>
+        <button mat-raised-button (click)="showDetails(produit)" [ngStyle]="{'background-color': produit.colour}">{{ produit.name }}</button>
       </div>
     </section>
 

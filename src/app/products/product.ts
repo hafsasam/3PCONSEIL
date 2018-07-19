@@ -1,6 +1,6 @@
 export class Product {
   name: string;
-  index: number;
+  colour: string;
   image: string;
   description: string;
   objectifs: string[];
