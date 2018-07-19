@@ -13,7 +13,7 @@ export const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'references', component: ReferencesComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', component: HomeComponent },
   { path: baseURL + 'home', redirectTo: '/home', pathMatch: 'full' },
   { path: baseURL + 'services', redirectTo: '/services', pathMatch: 'full' },
   { path: baseURL + 'products', redirectTo: '/products', pathMatch: 'full' },
