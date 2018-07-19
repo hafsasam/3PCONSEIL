@@ -1,6 +1,60 @@
 * {
-  font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
+  background: none;
 
 }
 
+.btn--menu {
+  position: fixed;
+  top: 1vw;
+  right: 2vw;
+  color: #939391;
+  pointer-events: visible;
+  background: none;
 
+  height: 2vw;
+  width: 2vw;
+}
+
+.icon {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 auto;
+  background: none;
+  fill: #454545;
+}
+
+.btn {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: none;
+  color: inherit;
+}
+
+mat-sidenav {
+  position: absolute;
+  background: #017155;
+  width: 35vh;
+}
+
+.menu__inner {
+  list-style-type: none;
+}
+
+.menu__item {
+  padding-top: 0.55em;
+  margin-top: 40%;
+}
+
+.menu__inner .menu__link {
+  font-size: 1.25rem;
+  font-family: 'nexa_boldregular', sans-serif;
+  text-transform: uppercase;
+  color: white;
+}
+.menu__inner .menu__link:hover {
+  outline: none;
+  color: #42213D;
+  text-decoration: line-through;
+}
