@@ -16,12 +16,8 @@ footer {
   color: white;
 }
 
-#3p {
-  color: #017155;
-}
-
 #text {
-  font-size: 15px;
+  font-size: 1em;
   width: 20em;
   padding: 20px 0 0 75px;
   float: left;
