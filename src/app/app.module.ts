@@ -13,6 +13,9 @@ import { MatDialogModule } from '@angular/material';
 import { MatTabsModule } from '@angular/material/tabs';
 import { RestangularModule, Restangular } from 'ngx-restangular';
 import { RestangularConfigFactory } from './restConfig';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -64,7 +67,10 @@ import { Services3pService } from './service/services3p.service';
     ReactiveFormsModule,
     MatDialogModule,
     MatTabsModule,
-    RestangularModule.forRoot(RestangularConfigFactory)
+    RestangularModule.forRoot(RestangularConfigFactory),
+    MatToolbarModule,
+    CarouselModule.forRoot(),
+    MatSidenavModule
   ],
   entryComponents: [ ProductDialogComponent ],
   providers: [

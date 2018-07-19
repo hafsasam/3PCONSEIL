@@ -1,9 +1,26 @@
-<app-navbar></app-navbar>
+<mat-sidenav-container (backdropClick)="close('backdrop')">
+
+  <mat-sidenav #sidenav (keydown.escape)="close('escape')" position="end">
+    <ul class="menu__inner">
+      <li class="menu__item"><a class="menu__link" routerLink="/">Accueil</a></li>
+      <li class="menu__item"><a class="menu__link" routerLink="/services">Services</a></li>
+      <li class="menu__item"><a class="menu__link" routerLink="/products">Produits</a></li>
+      <li class="menu__item"><a class="menu__link" routerLink="/ref">Références</a></li>
+      <li class="menu__item"><a class="menu__link" routerLink="/contact">Contact</a></li>
+    </ul>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button class="btn btn--menu" (click)="sidenav.open()">
+      <svg class="icon icon--menu"><symbol id="icon-menu" viewBox="0 0 17.6 9.9">
+        <title>menu</title>
+        <path d="M17.6,1H0V0h17.6V1z M17.6,4.3h-12v1h12V4.3z M17.6,8.9h-6.9v1h6.9V8.9z"/>
+      </symbol>
+        <use xlink:href="#icon-menu"></use></svg>
+    </button>
+
+
+
 <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
 <app-footer></app-footer>
-
-
-
-
-
-

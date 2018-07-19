@@ -26,8 +26,9 @@
   position: absolute;
   top: 1vw;
   right: 2vw;
-  color: #939391;
   pointer-events: visible;
+  height: 2vw;
+  width: 2vw;
 }
 .btn--up {
   position: absolute;
@@ -81,7 +82,7 @@
   list-style-type: none;
   padding: 20vh 3em;
   margin: 0;
-  background: #C2C1C2;
+  background: #017155;
   overflow: hidden;
 }
 
@@ -91,6 +92,8 @@
 
 .btn--close {
   opacity: 1;
+  font-size: 3em;
+  color: #4F518C;
 }
 
 .menu--open .menu__item,
@@ -113,9 +116,11 @@
 }
 
 .menu .menu__link {
-  font-size: 2vw;
-  color: #4f4f54;
+  font-size: 1.5rem;
   font-weight: bold;
+  font-family: 'nexa_boldregular', sans-serif;
+  text-transform: uppercase;
+  color: white;
 }
 
 .menu .menu__link:hover,

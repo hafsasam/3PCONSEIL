@@ -1,13 +1,15 @@
- <div class="menu">
+<!--
+
+<div class="menu">
     <button class="btn btn--menu" (click)="onToggle()">
       <svg class="icon icon--menu"><use xlink:href="#icon-menu"></use><use xlink:href="#icon-menu"></use></svg>
     </button>
-   <!--<button class="btn btn--up" (click)="goUp()">
+   <button class="btn btn--up" (click)="goUp()">
       up
     </button>
    <button class="btn btn--down" (click)="goDown()">
       down
-    </button>-->
+    </button>
    <button class="btn btn--top" (click)="goTop()">
      &#8593;
     </button>
@@ -33,10 +35,26 @@
         <li class="menu__item"><a class="menu__link" routerLink="/products">Produits</a></li>
         <li class="menu__item"><a class="menu__link" routerLink="/ref">Références</a></li>
         <li class="menu__item"><a class="menu__link" routerLink="/contact">Contact</a></li>
-        <li class="menu__item"><a class="btn btn--close" (click)="onToggle()"><svg class="icon icon--cross">
-          <use xlink:href="#icon-cross"></use>
-        </svg></a></li>
+        <li class="menu__item"><a class="btn btn--close" (click)="onToggle()">&rarr;</a></li>
       </ul>
     </nav>
 
   </div>
+-->
+<button class="btn btn--menu" (click)="sidenav.open()">
+  <svg class="icon icon--menu"><symbol id="icon-menu" viewBox="0 0 17.6 9.9">
+    <title>menu</title>
+    <path d="M17.6,1H0V0h17.6V1z M17.6,4.3h-12v1h12V4.3z M17.6,8.9h-6.9v1h6.9V8.9z"/>
+  </symbol>
+    <use xlink:href="#icon-menu"></use></svg>
+</button>
+<mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+  <ul class="menu__inner" >
+    <li class="menu__item"><a class="menu__link" routerLink="/">Accueil</a></li>
+    <li class="menu__item"><a class="menu__link" routerLink="/services">Services</a></li>
+    <li class="menu__item"><a class="menu__link" routerLink="/products">Produits</a></li>
+    <li class="menu__item"><a class="menu__link" routerLink="/ref">Références</a></li>
+    <li class="menu__item"><a class="menu__link" routerLink="/contact">Contact</a></li>
+    <li class="menu__item"><a class="btn btn--close" (click)="onToggle()">&rarr;</a></li>
+  </ul>
+</mat-sidenav>
