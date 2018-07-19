@@ -48,13 +48,4 @@
   </symbol>
     <use xlink:href="#icon-menu"></use></svg>
 </button>
-<mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
-  <ul class="menu__inner" >
-    <li class="menu__item"><a class="menu__link" routerLink="/">Accueil</a></li>
-    <li class="menu__item"><a class="menu__link" routerLink="/services">Services</a></li>
-    <li class="menu__item"><a class="menu__link" routerLink="/products">Produits</a></li>
-    <li class="menu__item"><a class="menu__link" routerLink="/ref">Références</a></li>
-    <li class="menu__item"><a class="menu__link" routerLink="/contact">Contact</a></li>
-    <li class="menu__item"><a class="btn btn--close" (click)="onToggle()">&rarr;</a></li>
-  </ul>
-</mat-sidenav>
+

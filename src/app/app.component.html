@@ -1,6 +1,6 @@
-<mat-sidenav-container (backdropClick)="close('backdrop')">
+<mat-sidenav-container (backdropClick)="sidenav.close()">
 
-  <mat-sidenav #sidenav (keydown.escape)="close('escape')" position="end">
+  <mat-sidenav #sidenav position="end">
     <ul class="menu__inner">
       <li class="menu__item"><a class="menu__link" routerLink="/">Accueil</a></li>
       <li class="menu__item"><a class="menu__link" routerLink="/services">Services</a></li>
