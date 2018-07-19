@@ -8,14 +8,7 @@ import { flyInOut } from '../animations';
 @Component({
   selector: 'app-services-detail',
   templateUrl: './services-detail.component.html',
-  styleUrls: ['./services-detail.component.css'],
-  host: {
-    '[@flyInOut]': 'true',
-    'style': 'display: block;'
-  },
-  animations: [
-    flyInOut()
-  ]
+  styleUrls: ['./services-detail.component.css']
 })
 export class ServicesDetailComponent implements OnInit {
 

@@ -11,14 +11,7 @@ import { flyInOut } from '../animations';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css'],
-  host: {
-    '[@flyInOut]': 'true',
-    'style': 'display: block;'
-  },
-  animations: [
-    flyInOut()
-  ]
+  styleUrls: ['./products.component.css']
 })
 
 export class ProductsComponent implements OnInit {
