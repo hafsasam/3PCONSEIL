@@ -16,7 +16,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     name: 'GESTION DES ACHATS',
-    colour: '#42213D',
+    colour: '#834279',
     image: '',
     description: '3P CONSEIL offre une solution performante qui permet l’optimisation de la gestion des achats dans les ' +
     'meilleures conditions de fiabilité, célérité et efficacité.',

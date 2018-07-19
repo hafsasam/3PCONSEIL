@@ -14,16 +14,18 @@ p {
 
 }
 h1 {
-  padding-top: 0.5em;
   font-size: 3em;
   font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
   color: #261321;
 }
 
 h2 {
-  margin-top: -15px;
-  color: #C2C1C2;
-
+  font-family: 'nexa_boldregular', sans-serif;
+  letter-spacing: -0.025em;
+  font-size: 3.3em;
+  font-weight: 200;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  color: #42213D;
 }
 
 section {
