@@ -1,73 +1,74 @@
+
+<!--
 <div class="slider">
-  <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-  <input type="radio" name="slider" title="slide2" class="slider__nav"/>
-  <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+  <input type="radio" name="slider" title="Nos valeurs" checked="checked" class="slider__nav"/>
+  <input type="radio" name="slider" title="Nos enjeux" class="slider__nav"/>
+  <input type="radio" name="slider" title="Notre stratégie" class="slider__nav"/>
   <div class="slider__inner">
-    <div class="slider__contents">
-      <h2 class="slider__caption">Nos valeurs</h2>
-      <div class="inner">
-        <div class="slide-1">
-          <h4>SATISFACTION DES CLIENTS</h4>
-          <p class="slider__txt">La satisfaction client est le reflet de notre compétence. La qualité du
-              service rendu à nos clients est un gage de développement de pérennité du
-              cabinet. Satisfaire le client, c’est le faire gagner au-delà de son attente
-              et faire gagner notre cabinet au-delà de nos objectifs.</p>
-        </div>
-        <div class="slide-2">
-          <h4>RÉACTIVITÉ</h4>
-          <p class="slider__txt">Nous garantissons à nos clients une réactivité immédiate avec des réponses
-              claires à leurs problèmes. Pour ce faire, 3P Conseil fait appel aux dernières
-              pratiques en matière de diagnostic, et propose des solutions sur-mesure à ses
-              clients, tout en respectant rigoureusement les délais convenus.</p>
-        </div>
-        <div class="slide-3">
-          <h4>INNOVATION</h4>
-          <p class="slider__txt">Dans le métier de Consulting, les innovations viennent des communautés qui
-              développent les meilleurs outils. En veille constante, nous faisons mûrir ces
-              solutions pour qualifier leur robustesse et leur fiabilité. Nous sélectionnons
-              les meilleurs et les intégrons à nos services. </p>
-        </div>
-      </div>
-    </div>
-    <div class="slider__contents">
-      <h2 class="slider__caption">Nos enjeux</h2>
-      <div class="inner">
-        <div class="slide-1">
-          <h4>EXPERTISE CONFIRMÉE</h4>
-          <p class="slider__txt">L'Expertise de 3P Conseil découle de l'expérience de ses compétences dans
-            les différents domaines d'interventions, et de la valeur ajoutée de son réseau d'experts et de partenaires. </p>
-        </div>
-        <div class="slide-2">
-          <h4>PRESTATIONS DE HAUTE QUALITÉ</h4>
-          <p class="slider__txt">Tous nos projets sont conçus et exécutés suivant une démarche qualité appropriée,
-            et ce afin d'assurer des prestations de Haute qualité à nos clients.</p>
-        </div>
-        <div class="slide-3">
-          <h4>POSITIONNEMENT MARKETING</h4>
-          <p class="slider__txt">3P Conseil est un bureau d'études qui offre des prestations de Haute qualité à des
-            prix adaptés aux budgets de nos clients.</p>
-        </div>
-      </div>
-    </div>
-    <div class="slider__contents">
-      <h2 class="slider__caption">Notre stratégie</h2>
-      <div class="inner">
-        <div class="slide-1">
-          <h4>CONDUITE DE CHANGEMENT</h4>
-          <p class="slider__txt">Nos clients interviennent dans un environnement en perpétuel changement.
-            Notre rôle est de leur faciliter l'adaptation et la transition.</p>
-        </div>
-        <div class="slide-2">
-          <h4>EXCELLENCE OPÉRATIONNELLE</h4>
-          <p class="slider__txt">L'Excellence opérationnelle de nos clients est le souci permanent de toute l'équipe 3P Conseil.</p>
-        </div>
-        <div class="slide-3">
-          <h4>MAÎTRISE DES RISQUES</h4>
-          <p class="slider__txt">3P vise entre autres la diffusion de la culture du contrôle interne et du Risk Management
-            auprès de nos clients.</p>
-        </div>
-      </div>
-    </div>
+
+
+
 
   </div>
 </div>
+-->
+<carousel>
+  <slide>
+    <div class="text-center py-5">
+      <h2 class="slider__caption">nos valeurs</h2>
+      <div class="container">
+        <div class="lead">
+          <h3>{{ valeurs.title1 }}</h3>
+          <p class="slider__txt">{{ valeurs.desc1 }}</p>
+        </div>
+        <div class="lead">
+          <h3>{{ valeurs.title2 }}</h3>
+          <p class="slider__txt">{{ valeurs.desc2 }}</p>
+        </div>
+        <div class="lead">
+          <h3>{{ valeurs.title3 }}</h3>
+          <p class="slider__txt">{{ valeurs.desc3 }}</p>
+        </div>
+      </div>
+    </div>
+  </slide>
+  <slide>
+    <div class="text-center py-5">
+      <h2 class="slider__caption">nos enjeux</h2>
+      <div class="container">
+        <div class="lead">
+          <h3>{{ enjeux.title1 }}</h3>
+          <p class="slider__txt">{{ enjeux.desc1 }}</p>
+        </div>
+        <div class="lead">
+          <h3>{{ enjeux.title2 }}</h3>
+          <p class="slider__txt">{{ enjeux.desc2 }}</p>
+        </div>
+        <div class="lead">
+          <h3>{{ enjeux.title3 }}</h3>
+          <p class="slider__txt">{{ enjeux.desc3 }}</p>
+        </div>
+      </div>
+    </div>
+  </slide>
+  <slide>
+    <div class="text-center py-5">
+      <h2 class="slider__caption">notre stratégie</h2>
+      <div class="container">
+        <div class="lead">
+          <h3>{{ strategie.title1 }}</h3>
+          <p class="slider__txt">{{ strategie.desc1 }}</p>
+        </div>
+        <div class="lead">
+          <h3>{{ strategie.title2 }}</h3>
+          <p class="slider__txt">{{ strategie.desc2 }}</p>
+        </div>
+        <div class="lead">
+          <h3>{{ strategie.title3 }}</h3>
+          <p class="slider__txt">{{ strategie.desc3 }}</p>
+        </div>
+      </div>
+    </div>
+  </slide>
+
+</carousel>
