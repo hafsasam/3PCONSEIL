@@ -7,9 +7,9 @@
   --color-grid: #f3f3f3;
   --color-slide-alt: #fff;
   --color-slide-text-bg: #000;
-  font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-family: 'nexa_boldregular', Garamond, "Times New Roman", serif;
   min-height: 100vh;
-  width: 100%;
+  width: auto;
   color: #57585c;
   color: var(--color-text);
   background-color: #fff;
@@ -83,9 +83,7 @@
   flex-direction: column;
   align-items: flex-end;
   max-width: 400px;
-  position: absolute;
-  top: 35%;
-  right: 50%;
+  margin-top: 40vh;
 }
 
 .slide__title {
