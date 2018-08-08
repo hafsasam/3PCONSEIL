@@ -26,3 +26,10 @@ mat-toolbar {
   padding: 16px;
   border-radius: 8px;
 }
+
+@media screen and (max-width:50em) {
+
+  h2 {
+    font-size: 7vw;
+  }
+}

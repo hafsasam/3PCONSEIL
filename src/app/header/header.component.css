@@ -138,3 +138,36 @@
 }
 
 
+@media screen and (max-width:50em) {
+
+  .container {
+    display: inline-block;
+    margin-left: -4vw;
+
+  }
+
+  .slide, .inner {
+    min-width: 100vw;
+  }
+
+  .inner {
+    border: none;
+  }
+
+  .slide {
+    top: 0;
+  }
+
+  .slide__title {
+    font-size: 12vw;
+  }
+
+  .slide__subtitle {
+    font-size: 7vw;
+  }
+
+  .filler1, .filler2, .filler4, .filler3, .filler5 {
+    display: none;
+  }
+
+}

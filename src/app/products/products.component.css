@@ -56,3 +56,10 @@ button {
   width: 13rem;
   height: 4rem;
 }
+
+@media screen and (max-width:50em) {
+
+  h3 {
+    font-size: 7vw;
+  }
+}

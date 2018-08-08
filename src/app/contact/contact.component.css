@@ -1,6 +1,6 @@
 .container {
   padding: 1rem;
-  min-width: 35rem;
+  min-width: 30rem;
   min-height: 25rem;
   display: flex;
   flex-direction: column;
@@ -38,12 +38,12 @@ section {
   display: grid;
   justify-content: space-around;
   align-items: start;
-  grid-template-columns: 0.5fr auto 0.5fr auto 1fr;
+  grid-template-columns: 0.25fr auto 0.5fr auto .25fr;
   grid-template-rows: 1fr 2fr 0.25fr 2fr;
   grid-template-areas:  "header header header header header"
-                        ". form . contact-details contac-details"
-                        ". form . map map"
-                        ". form . map map";
+                        ". form contact-details contact-details ."
+                        ". form map map ."
+                        ". form map map .";
   grid-gap: 5em;
 }
 
@@ -64,4 +64,24 @@ mat-toolbar {
 
 mat-card-title {
   color: #42213D;
+}
+
+@media screen and (max-width:50em) {
+
+  section {
+    display: grid;
+    align-items: start;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr .5fr .5fr;
+    grid-template-areas:  "header"
+    "form"
+    "contact-details"
+    "map";
+    grid-gap: 1em;
+  }
+
+  h3 {
+    font-size: 7vw;
+  }
 }

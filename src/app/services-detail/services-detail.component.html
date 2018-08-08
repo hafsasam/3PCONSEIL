@@ -1,4 +1,4 @@
-<section class="bg-light">
+<section>
   <mat-toolbar>
     <h2>Services</h2>
   </mat-toolbar>
@@ -7,7 +7,7 @@
 
     <mat-tab-group dynamicHeight>
       <mat-tab *ngFor="let ser of services" label="{{ ser.type }}" >
-        <div class="example-small-box mat-elevation-z4">
+        <div class="example-large-box mat-elevation-z4">
           <p class="desc">
             {{ ser.desc }}
           </p>
