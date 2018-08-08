@@ -1,0 +1,14 @@
+h2 {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-family: 'nexa_boldregular', serif;
+  font-size: 3vw;
+}
+
+mat-toolbar {
+  background: #017155;
+  height: 5em;
+  grid-area: header;
+  width: 100%;
+}
